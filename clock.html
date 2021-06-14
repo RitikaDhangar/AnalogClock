@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling/style2.css">
+    <title>Document</title>
+    <h1>myClock</h1>
+    <div id="clock">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+</head>
+<body>
+    <script>
+
+     setInterval(()=>{
+        const d= new Date();
+        const dhour=d.getHours();
+        const dminute=d.getMinutes();
+        const dsecond=d.getSeconds();
+        const hours=30*dhour+dminute/12;
+        const minutes=6*dminute;
+        const seconds=6*dsecond;
+
+        hour.style.transform=`rotate(${hours}deg)`;
+        minute.style.transform=`rotate(${minutes}deg)`;
+        second.style.transform=`rotate(${seconds}deg)`
+     },1000)
+        
+    </script>
+    
+</body>
+</html>
