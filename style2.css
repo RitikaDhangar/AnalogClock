@@ -5,7 +5,7 @@
 body{
     position:relative;
     margin: auto;
-    background-image: url('../Clock.png');
+    background-image: url('./Clock.png');
     background-repeat: no-repeat;
     background-size:500px;
     background-position: center 100px;
